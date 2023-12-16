@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases';
+  title = 'Mi primera app de Angular';
+  counter: number = 10
+
+increaseBy (numero: number):void {
+this.counter++;
 }
+
+decreaseBy (numero: number):void {
+  this.counter--;
+  }
+
+reset():void{
+  this.counter = 10
+}
+}
+
